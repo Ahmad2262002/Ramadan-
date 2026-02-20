@@ -34,11 +34,49 @@ export async function generateMetadata({
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'app' });
 
+    const baseUrl = 'https://ramadan-jade.vercel.app';
+    const localizedTitle = `${t('title')} | Luxe Spiritual Hub`;
+    const localizedDesc = t('subtitle');
+
     return {
-        title: `${t('title')} | Luxe Spiritual Hub`,
-        description: t('subtitle'),
-        keywords: ['Ramadan 1447', 'Prayer Times', 'Athkar', 'Imsakiyah', 'Islamic App', 'Ramadan Hub Luxe'],
+        title: localizedTitle,
+        description: localizedDesc,
+        keywords: ['Ramadan 1447', 'Prayer Times', 'Athkar', 'Imsakiyah', 'Islamic App', 'Ramadan Hub Luxe', 'Ramadan 2026'],
         authors: [{ name: 'Ahmad Alkadri' }],
+        metadataBase: new URL(baseUrl),
+        alternates: {
+            canonical: `/${locale}`,
+            languages: {
+                'en': '/en',
+                'ar': '/ar',
+            },
+        },
+        openGraph: {
+            title: localizedTitle,
+            description: localizedDesc,
+            url: `${baseUrl}/${locale}`,
+            siteName: 'Ramadan Hub Luxe',
+            images: [
+                {
+                    url: '/og-image.png', // User should add this to public/
+                    width: 1200,
+                    height: 630,
+                    alt: 'Ramadan Hub Luxe',
+                },
+            ],
+            locale: locale === 'ar' ? 'ar_SA' : 'en_US',
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: localizedTitle,
+            description: localizedDesc,
+            images: ['/og-image.png'],
+        },
+        robots: {
+            index: true,
+            follow: true,
+        },
     };
 }
 

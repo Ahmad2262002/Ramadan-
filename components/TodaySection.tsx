@@ -10,6 +10,8 @@ import LoadingSkeleton from './LoadingSkeleton';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn, format12h, localizeDigits, formatLocalizedNumber } from '@/lib/utils';
 import duasData from '@/data/duas.json';
+import hadithData from '@/data/hadith.json';
+import { useCallback } from 'react';
 
 import { TabType } from '@/app/[locale]/page';
 
@@ -34,7 +36,13 @@ export default function TodaySection({ onTabChange }: TodayProps) {
     const dailyDua = useMemo(() => {
         const today = new Date();
         const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
-        return duasData[dayOfYear % duasData.length];
+        return (duasData as any)[dayOfYear % (duasData as any).length];
+    }, []);
+
+    const hadithOfTheDay = useMemo(() => {
+        const today = new Date();
+        const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
+        return (hadithData as any)[dayOfYear % (hadithData as any).length];
     }, []);
 
     const weatherInfo = useMemo(() => {
@@ -74,7 +82,15 @@ export default function TodaySection({ onTabChange }: TodayProps) {
         return () => clearInterval(timer);
     }, []);
 
-    const fetchData = async (forceRefresh = false) => {
+    const formatTimeLeft = useCallback((ms: number) => {
+        const h = Math.floor(ms / (1000 * 60 * 60));
+        const m = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((ms % (1000 * 60)) / 1000);
+        const timeStr = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        return locale === 'ar' ? localizeDigits(timeStr) : timeStr;
+    }, [locale]);
+
+    const fetchData = useCallback(async (forceRefresh = false) => {
         if (forceRefresh) setIsRefreshing(true);
         else setLoading(true);
 
@@ -192,7 +208,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
             setLoading(false);
             setIsRefreshing(false);
         }
-    };
+    }, [t]);
 
     useEffect(() => {
         const handleSettingsUpdate = () => {
@@ -200,9 +216,9 @@ export default function TodaySection({ onTabChange }: TodayProps) {
         };
         window.addEventListener('ramadan-settings-updated', handleSettingsUpdate);
         return () => window.removeEventListener('ramadan-settings-updated', handleSettingsUpdate);
-    }, []);
+    }, [fetchData]);
 
-    useEffect(() => { fetchData(); }, []);
+    useEffect(() => { fetchData(); }, [fetchData]);
 
     useEffect(() => {
         if (prayerTimes && currentTime) {
@@ -292,7 +308,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                 }
             }
         }
-    }, [currentTime, prayerTimes, isIftarTime]);
+    }, [currentTime, prayerTimes, isIftarTime, formatTimeLeft]);
 
     // Dynamic Background Logic
     useEffect(() => {
@@ -352,14 +368,6 @@ export default function TodaySection({ onTabChange }: TodayProps) {
         root.style.setProperty('--bg-glow-2', colors.glow2);
         root.style.setProperty('--bg-glow-3', colors.glow3);
     }, [nextPrayer, weather]);
-
-    const formatTimeLeft = (ms: number) => {
-        const h = Math.floor(ms / (1000 * 60 * 60));
-        const m = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((ms % (1000 * 60)) / 1000);
-        const timeStr = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-        return locale === 'ar' ? localizeDigits(timeStr) : timeStr;
-    };
 
     if (loading || !currentTime) return <LoadingSkeleton />;
 
@@ -433,7 +441,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                         backgroundColor: isIftarTime ? 'rgba(16, 185, 129, 0.05)' : 'transparent'
                     }}
                     className={cn(
-                        "md:col-span-4 premium-card min-h-[450px] flex flex-col items-center justify-center relative overflow-hidden group transition-all duration-1000",
+                        "md:col-span-4 premium-card min-h-[450px] flex flex-col items-center justify-center relative overflow-hidden group transition-all duration-1000 gpu-accelerate",
                         isIftarTime && "border-emerald-500/30"
                     )}
                 >
@@ -547,7 +555,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                 {/* Weather Widget */}
                 <motion.div
                     whileHover={{ y: -5 }}
-                    className="md:col-span-2 premium-card flex flex-col justify-between group h-full overflow-hidden"
+                    className="md:col-span-2 premium-card flex flex-col justify-between group h-full overflow-hidden gpu-accelerate"
                 >
                     <div className="flex items-start justify-between relative z-10">
                         <div className="space-y-1">
@@ -695,21 +703,47 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                     </div>
                 </motion.div>
 
-                {/* Quote of the Day Section */}
+                {/* Prophetic Guidance Section */}
                 <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5 }}
-                    className="md:col-span-6 premium-card p-12 text-center relative overflow-hidden group border-amber-500/5 mt-8 bg-gradient-to-b from-white/[0.02] to-transparent"
+                    className="md:col-span-6 premium-card p-8 md:p-12 text-center relative overflow-hidden group border-amber-500/5 mt-8 bg-gradient-to-b from-white/[0.02] to-transparent gpu-accelerate"
                 >
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-transparent via-amber-500/30 to-transparent shadow-[0_0_20px_rgba(245,158,11,0.5)]" />
-                    <Sparkles className="w-6 h-6 text-amber-500/40 mx-auto mb-8 animate-pulse" />
-                    <p className="text-2xl font-medium text-white/90 italic leading-relaxed font-serif max-w-3xl mx-auto tracking-tight">
-                        &quot;{t('insights.quote')}&quot;
-                    </p>
-                    <div className="mt-10 flex flex-col items-center">
-                        <div className="h-px w-12 bg-white/10 mb-4" />
-                        <span className="text-[11px] font-black uppercase tracking-[0.5em] text-white/20">{t('insights.quoteAuthor')}</span>
+
+                    <div className="flex items-center justify-center gap-2 mb-8">
+                        <Sparkles className="w-5 h-5 text-amber-500/40 animate-pulse" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-amber-500/60">{t('insights.didYouKnow')}</span>
+                        <Sparkles className="w-5 h-5 text-amber-500/40 animate-pulse" />
+                    </div>
+
+                    <div className="max-w-3xl mx-auto space-y-8">
+                        <p className="text-xl md:text-2xl font-medium text-white/90 italic leading-relaxed font-serif tracking-tight">
+                            &quot;{locale === 'ar' ? hadithOfTheDay.textAr : hadithOfTheDay.textEn}&quot;
+                        </p>
+
+                        <div className="flex flex-col items-center gap-4">
+                            <div className="h-px w-12 bg-white/10" />
+                            <span className="text-[11px] font-black uppercase tracking-[0.5em] text-white/20">
+                                {hadithOfTheDay.reference}
+                            </span>
+                        </div>
+
+                        {/* Practical Takeaway Card */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            className="bg-amber-500/[0.03] border border-amber-500/10 rounded-2xl p-6 md:p-8 mt-4 relative overflow-hidden"
+                        >
+                            <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/20" />
+                            <div className="flex flex-col items-center gap-2">
+                                <span className="text-[9px] font-black uppercase tracking-[0.2em] text-amber-500/50">Practical Takeaway</span>
+                                <p className="text-sm md:text-base font-medium text-white/70 leading-relaxed">
+                                    {locale === 'ar' ? hadithOfTheDay.takeawayAr : hadithOfTheDay.takeawayEn}
+                                </p>
+                            </div>
+                        </motion.div>
                     </div>
 
                     {/* Decorative Elements */}

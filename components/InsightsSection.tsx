@@ -70,7 +70,7 @@ export default function InsightsSection() {
 
                 <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-                        <Lightbulb className="w-6 h-6 text-blue-500" />
+                        <Sparkles className="w-6 h-6 text-blue-500" />
                     </div>
                     <div>
                         <h3 className="font-black text-white text-lg leading-tight uppercase tracking-tight">{t('didYouKnow')}</h3>

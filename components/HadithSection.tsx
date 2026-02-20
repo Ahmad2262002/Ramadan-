@@ -48,15 +48,22 @@ export default function HadithSection() {
                     )} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
                         {locale === 'ar' ? hadithOfTheDay.textAr : hadithOfTheDay.textEn}
                     </p>
-                    <div className="flex items-center gap-3 pt-6 border-t border-amber-500/10">
-                        <div className="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center">
-                            <ScrollText className="w-5 h-5 text-amber-500" />
-                        </div>
-                        <div>
-                            <div className="text-white/60 font-black text-[10px] uppercase tracking-widest">{hadithOfTheDay.narrator}</div>
-                            <div className="text-[9px] text-white/20 font-black uppercase tracking-[0.2em]">
-                                {t('hadith.reference')}: {locale === 'ar' ? localizeDigits(hadithOfTheDay.reference) : hadithOfTheDay.reference}
+                    <div className="flex flex-col gap-4 pt-6 border-t border-amber-500/10">
+                        <div className="flex items-center gap-3">
+                            <div className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center">
+                                <ScrollText className="w-4 h-4 text-amber-500" />
                             </div>
+                            <div className="text-[10px] text-white/40 font-black uppercase tracking-[0.2em]">
+                                {t('hadith.reference')}: {locale === 'ar' ? localizeDigits((hadithOfTheDay as any).reference) : (hadithOfTheDay as any).reference}
+                            </div>
+                        </div>
+
+                        {/* Practical Takeaway for Highlighted Hadith */}
+                        <div className="bg-amber-500/[0.05] rounded-xl p-4 border border-amber-500/10">
+                            <span className="text-[9px] font-black uppercase tracking-[0.1em] text-amber-500/60 block mb-1">Practical Takeaway</span>
+                            <p className="text-xs text-white/70 italic">
+                                {locale === 'ar' ? (hadithOfTheDay as any).takeawayAr : (hadithOfTheDay as any).takeawayEn}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,11 +101,19 @@ export default function HadithSection() {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pt-8 border-t border-white/5">
-                                    <div className="space-y-2">
-                                        <div className="text-white/60 font-black text-[11px] uppercase tracking-widest">{hadith.narrator}</div>
-                                        <div className="text-[10px] text-white/10 font-black uppercase tracking-[0.2em]">
-                                            {t('hadith.reference')}: {locale === 'ar' ? localizeDigits(hadith.reference) : hadith.reference}
+                                    <div className="space-y-4 w-full">
+                                        <div className="text-[10px] text-white/20 font-black uppercase tracking-[0.2em]">
+                                            {t('hadith.reference')}: {locale === 'ar' ? localizeDigits((hadith as any).reference) : (hadith as any).reference}
                                         </div>
+
+                                        {isExpanded && (
+                                            <div className="bg-white/[0.02] rounded-xl p-4 border border-white/5">
+                                                <span className="text-[9px] font-black uppercase tracking-[0.1em] text-white/40 block mb-1">Practical Takeaway</span>
+                                                <p className="text-xs text-white/60 italic leading-relaxed">
+                                                    {locale === 'ar' ? (hadith as any).takeawayAr : (hadith as any).takeawayEn}
+                                                </p>
+                                            </div>
+                                        )}
                                     </div>
 
                                     {text.length > 200 && (
