@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "titleEn": "Dua for Parents",
+        "titleAr": "دعاء للوالدين",
+        "textEn": "My Lord, have mercy upon them as they brought me up [when I was] small.",
+        "textAr": "رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+        "reference": "Quran 17:24"
+    },
+    {
+        "id": 2,
+        "titleEn": "Dua for Guidance",
+        "titleAr": "دعاء الهداية",
+        "textEn": "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy.",
+        "textAr": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً",
+        "reference": "Quran 3:8"
+    },
+    {
+        "id": 3,
+        "titleEn": "Dua for Forgiveness",
+        "titleAr": "دعاء المغفرة",
+        "textEn": "Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.",
+        "textAr": "رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ",
+        "reference": "Quran 7:23"
+    },
+    {
+        "id": 4,
+        "titleEn": "Dua for Patience",
+        "titleAr": "دعاء الصبر",
+        "textEn": "Our Lord, pour upon us patience and plant firmly our feet and give us victory over the disbelieving people.",
+        "textAr": "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+        "reference": "Quran 2:250"
+    },
+    {
+        "id": 5,
+        "titleEn": "Dua for Provision",
+        "titleAr": "دعاء الرزق",
+        "textEn": "O Allah, I ask You for knowledge that is of benefit, a good provision and deeds that will be accepted.",
+        "textAr": "اللهم إني أسألك علماً نافعاً، ورزقاً طيباً، وعملاً متقبلاً",
+        "reference": "Sunan Ibn Majah"
+    },
+    {
+        "id": 6,
+        "titleEn": "Dua for Firmness",
+        "titleAr": "دعاء الثبات",
+        "textEn": "O Turner of the hearts, make my heart firm upon Your religion.",
+        "textAr": "يا مقلب القلوب ثبت قلبي على دينك",
+        "reference": "Jami' at-Tirmidhi"
+    },
+    {
+        "id": 7,
+        "titleEn": "Dua for Ease",
+        "titleAr": "دعاء التيسير",
+        "textEn": "O Allah, there is no ease except in that which You have made easy, and You make the difficulty, if You will, easy.",
+        "textAr": "اللهم لا سهل إلا ما جعلته سهلاً، وأنت تجعل الحزن إذا شئت سهلاً",
+        "reference": "Sahih Ibn Hibban"
+    },
+    {
+        "id": 8,
+        "titleEn": "Dua for Knowledge",
+        "titleAr": "دعاء العلم",
+        "textEn": "My Lord, increase me in knowledge.",
+        "textAr": "رَّبِّ زِدْنِي عِلْمًا",
+        "reference": "Quran 20:114"
+    },
+    {
+        "id": 9,
+        "titleEn": "Dua for Gratitude",
+        "titleAr": "دعاء الشكر",
+        "textEn": "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents.",
+        "textAr": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ",
+        "reference": "Quran 27:19"
+    },
+    {
+        "id": 10,
+        "titleEn": "Dua for Family",
+        "titleAr": "دعاء للأهل",
+        "textEn": "Our Lord, grant us from among our wives and offspring comfort to our eyes and make us an example for the righteous.",
+        "textAr": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+        "reference": "Quran 25:74"
+    },
+    {
+        "id": 11,
+        "titleEn": "Dua for Protection",
+        "titleAr": "دعاء الحفظ",
+        "textEn": "O Allah, protect me from my front and my back, from my right and my left, and from above me.",
+        "textAr": "اللهم احفظني من بين يدي ومن خلفي وعن يميني وعن شمالي ومن فوقي",
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 12,
+        "titleEn": "Dua for the Afterlife",
+        "titleAr": "دعاء الآخرة",
+        "textEn": "Our Lord, give us in this world [that which is] good and in the客 Afterlife [that which is] good and protect us from the punishment of the Fire.",
+        "textAr": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+        "reference": "Quran 2:201"
+    },
+    {
+        "id": 13,
+        "titleEn": "Dua for Anxiety",
+        "titleAr": "دعاء الهم",
+        "textEn": "O Allah, I am Your servant, son of Your servant... satisfy my heart with the Quran.",
+        "textAr": "اللهم إني عبدك ابن عبدك... أن تجعل القرآن ربيع قلبي",
+        "reference": "Musnad Ahmad"
+    },
+    {
+        "id": 14,
+        "titleEn": "Dua for Healing",
+        "titleAr": "دعاء الشفاء",
+        "textEn": "O Allah, Lord of mankind, remove the disease and grant healing, for You are the Healer.",
+        "textAr": "أذهب البأس رب الناس واشف أنت الشافي",
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 15,
+        "titleEn": "Dua for Steadfastness",
+        "titleAr": "دعاء الاستقامة",
+        "textEn": "O Allah, I ask You for steadfastness in the matter and I ask You for the resolution of right guidance.",
+        "textAr": "اللهم إني أسألك الثبات في الأمر، والعزيمة على الرشد",
+        "reference": "Sunan an-Nasa'i"
+    },
+    {
+        "id": 16,
+        "titleEn": "Dua for Sincerity",
+        "titleAr": "دعاء الإخلاص",
+        "textEn": "O Allah, I seek refuge in You from knowingly associating anything with You and I seek Your forgiveness for what I do unknowingly.",
+        "textAr": "اللهم إني أعوذ بك أن أشرك بك وأنا أعلم وأستغفرك لما لا أعلم",
+        "reference": "Ad-Adab Al-Mufrad"
+    },
+    {
+        "id": 17,
+        "titleEn": "Dua for Light",
+        "titleAr": "دعاء النور",
+        "textEn": "O Allah, place light in my heart, light in my tongue, light in my hearing and light in my sight.",
+        "textAr": "اللهم اجعل في قلبي نوراً، وفي لساني نوراً، وفي سمعي نوراً، وفي بصري نوراً",
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 18,
+        "titleEn": "Dua for Repentance",
+        "titleAr": "دعاء التوبة",
+        "textEn": "O Allah, forgive me and accept my repentance, for You are the Accepter of repentance, the Most Merciful.",
+        "textAr": "رب اغفر لي وتب علي إنك أنت التواب الغفور",
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 19,
+        "titleEn": "Dua for Contentment",
+        "titleAr": "دعاء القناعة",
+        "textEn": "O Allah, make me content with what You have provided for me and bless it for me.",
+        "textAr": "اللهم قنِّعني بما رزقتني، وبارك لي فيه",
+        "reference": "Al-Hakim"
+    },
+    {
+        "id": 20,
+        "titleEn": "Dua for Charity",
+        "titleAr": "دعاء الصدقة",
+        "textEn": "Our Lord, accept from us; indeed You are the Hearing, the Knowing.",
+        "textAr": "رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
+        "reference": "Quran 2:127"
+    },
+    {
+        "id": 21,
+        "titleEn": "Dua for the Ummah",
+        "titleAr": "دعاء للأمة",
+        "textEn": "O Allah, bring the hearts of the Muslims together and rectify their affairs.",
+        "textAr": "اللهم ألف بين قلوب المسلمين وأصلح ذات بينهم",
+        "reference": "Islamic Tradition"
+    },
+    {
+        "id": 22,
+        "titleEn": "Dua for a Good Ending",
+        "titleAr": "دعاء حسن الخاتمة",
+        "textEn": "O Turner of the hearts, make my heart firm upon Your religion until I meet You.",
+        "textAr": "يا مقلب القلوب ثبت قلبي على دينك حتى ألقاك",
+        "reference": "Tradition"
+    },
+    {
+        "id": 23,
+        "titleEn": "Dua for Strength",
+        "titleAr": "دعاء القوة",
+        "textEn": "O Allah, I seek refuge in You from helplessness, laziness, cowardice and old age.",
+        "textAr": "اللهم إني أعوذ بك من العجز والكسل والجبن والبخل",
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 24,
+        "titleEn": "Dua for Truth",
+        "titleAr": "دعاء الحق",
+        "textEn": "O Allah, show us the truth as truth and enable us to follow it, and show us falsehood as falsehood and enable us to avoid it.",
+        "textAr": "اللهم أرنا الحق حقاً وارزقنا اتباعه وأرنا الباطل باطلاً وارزقنا اجتنابه",
+        "reference": "Tradition"
+    },
+    {
+        "id": 25,
+        "titleEn": "Dua for the Quran",
+        "titleAr": "دعاء القرآن",
+        "textEn": "O Allah, make the Quran the spring of my heart, the light of my chest and the remover of my grief.",
+        "textAr": "اللهم اجعل القرآن ربيع قلبي ونور صدري وجلاء حزني",
+        "reference": "Musnad Ahmad"
+    },
+    {
+        "id": 26,
+        "titleEn": "Dua for Safety",
+        "titleAr": "دعاء الأمن",
+        "textEn": "O Allah, I ask You for pardon and wellbeing in this world and the next.",
+        "textAr": "اللهم إني أسألك العفو والعافية في الدنيا والآخرة",
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 27,
+        "titleEn": "Dua for Mercy",
+        "titleAr": "دعاء الرحمة",
+        "textEn": "My Lord, forgive and have mercy, for You are the best of those who show mercy.",
+        "textAr": "رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَ",
+        "reference": "Quran 23:118"
+    },
+    {
+        "id": 28,
+        "titleEn": "Dua for the Grave",
+        "titleAr": "دعاء القبر",
+        "textEn": "O Allah, extend his grave for him and spread it with light.",
+        "textAr": "اللهم افسح له في قبره ونور له فيه",
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 29,
+        "titleEn": "Dua for Success",
+        "titleAr": "دعاء الفلاح",
+        "textEn": "Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
+        "textAr": "رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+        "reference": "Quran 18:10"
+    },
+    {
+        "id": 30,
+        "titleEn": "Dua for Laylatul Qadr",
+        "titleAr": "دعاء ليلة القدر",
+        "textEn": "O Allah, You are Forgiving and love forgiveness, so forgive me.",
+        "textAr": "اللهم إنك عفو تحب العفو فاعف عني",
+        "reference": "Jami' at-Tirmidhi"
+    }
+]

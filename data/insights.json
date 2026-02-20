@@ -1,0 +1,306 @@
+{
+    "deeds": [
+        {
+            "id": 1,
+            "textEn": "Smile at every person you meet today.",
+            "textAr": "ابتسم في وجه كل من تقابل اليوم"
+        },
+        {
+            "id": 2,
+            "textEn": "Give water to a bird or an animal.",
+            "textAr": "سقيا طائر أو حيوان اليوم"
+        },
+        {
+            "id": 3,
+            "textEn": "Call a relative you haven't spoken to in a while.",
+            "textAr": "صل رحمك واتصل بقريب لم تحدثه منذ فترة"
+        },
+        {
+            "id": 4,
+            "textEn": "Forgive someone who has wronged you.",
+            "textAr": "اعفُ عمن ظلمك اليوم"
+        },
+        {
+            "id": 5,
+            "textEn": "Read 5 extra pages of the Quran today.",
+            "textAr": "اقرأ 5 صفحات إضافية من القرآن اليوم"
+        },
+        {
+            "id": 6,
+            "textEn": "Help someone with their work or chores without being asked.",
+            "textAr": "ساعد شخصاً في عمله أو شؤون البيت دون أن يطلب"
+        },
+        {
+            "id": 7,
+            "textEn": "Avoid complaining about anything for the whole day.",
+            "textAr": "تجنب التذمر من أي شيء طوال اليوم"
+        },
+        {
+            "id": 8,
+            "textEn": "Make a sincere dua for a friend in their absence.",
+            "textAr": "ادعُ لصديق بظهر الغيب دعوة صادقة"
+        },
+        {
+            "id": 9,
+            "textEn": "Remove an obstacle from a path people walk on.",
+            "textAr": "أمط الأذى عن طريق الناس"
+        },
+        {
+            "id": 10,
+            "textEn": "Spend 10 minutes in absolute silence and reflection.",
+            "textAr": "اقضِ 10 دقائق في صمت تام وتفكر"
+        },
+        {
+            "id": 11,
+            "textEn": "Donate a small amount to charity, even if it's just a dollar.",
+            "textAr": "تصدق بمبلغ بسيط ولو كان درهماً"
+        },
+        {
+            "id": 12,
+            "textEn": "Teach someone a small prayer or a word of wisdom.",
+            "textAr": "علم شخصاً دعاءً قصيراً أو حكمة"
+        },
+        {
+            "id": 13,
+            "textEn": "Write down 3 things you are grateful for today.",
+            "textAr": "اكتب 3 أشياء أنت ممتن لها اليوم"
+        },
+        {
+            "id": 14,
+            "textEn": "Offer a sincere compliment to someone.",
+            "textAr": "قدم ثناءً صادقاً لشخص ما اليوم"
+        },
+        {
+            "id": 15,
+            "textEn": "Prepare or buy a small gift for a neighbor.",
+            "textAr": "جهز أو اشترِ هدية بسيطة لجارك"
+        },
+        {
+            "id": 16,
+            "textEn": "Keep your tongue busy with 'SubhanAllah' while working.",
+            "textAr": "اجعل لسانك رطباً بذكر الله أثناء العمل"
+        },
+        {
+            "id": 17,
+            "textEn": "Avoid looking at your phone for an hour after Iftar.",
+            "textAr": "تجنب استخدام هاتفك لمدة ساعة بعد الإفطار"
+        },
+        {
+            "id": 18,
+            "textEn": "Help a child with their studies or play.",
+            "textAr": "ساعد طفلاً في دراسته أو لعبه"
+        },
+        {
+            "id": 19,
+            "textEn": "Lower your gaze and avoid unnecessary distractions.",
+            "textAr": "غض بصرك وتجنب المشتتات غير الضرورية"
+        },
+        {
+            "id": 20,
+            "textEn": "Listen to someone speak without interrupting them.",
+            "textAr": "استمع لشخص يتحدث دون أن تقاطعه"
+        },
+        {
+            "id": 21,
+            "textEn": "Feed a hungry person or provide Iftar for someone.",
+            "textAr": "أطعم جائعاً أو فطر صائماً"
+        },
+        {
+            "id": 22,
+            "textEn": "Be the first to say 'Assalamu Aleikum' to others.",
+            "textAr": "كن البادئ بالسلام على الآخرين"
+        },
+        {
+            "id": 23,
+            "textEn": "Perform your prayers exactly on time today.",
+            "textAr": "أدِّ صلواتك في وقتها تماماً اليوم"
+        },
+        {
+            "id": 24,
+            "textEn": "Read about the life of a companion of the Prophet.",
+            "textAr": "اقرأ عن حياة أحد الصحابة الكرام"
+        },
+        {
+            "id": 25,
+            "textEn": "Make a plan to improve one bad habit.",
+            "textAr": "ضع خطة لتحسين عادة سيئة واحدة"
+        },
+        {
+            "id": 26,
+            "textEn": "Speak only good words or remain silent.",
+            "textAr": "قل خيراً أو اصمت"
+        },
+        {
+            "id": 27,
+            "textEn": "Water a plant or take care of nature.",
+            "textAr": "اسقِ نباتاً أو اعتنِ بالبيئة حولك"
+        },
+        {
+            "id": 28,
+            "textEn": "Offer to pray for someone who is going through a hard time.",
+            "textAr": "اعرض الدعاء لشخص يمر بوقت عصيب"
+        },
+        {
+            "id": 29,
+            "textEn": "Reflect on a single Ayah of the Quran deeply.",
+            "textAr": "تدبر في آية واحدة من القرآن بعمق"
+        },
+        {
+            "id": 30,
+            "textEn": "Thank Allah for the blessing of reaching the end of Ramadan.",
+            "textAr": "اشكر الله على نعمة بلوغ تمام الشهر"
+        }
+    ],
+    "facts": [
+        {
+            "id": 1,
+            "textEn": "Ramadan is the 9th month of the Islamic lunar calendar.",
+            "textAr": "رمضان هو الشهر التاسع في التقويم الهجري"
+        },
+        {
+            "id": 2,
+            "textEn": "The Quran was first revealed during the month of Ramadan.",
+            "textAr": "نزل القرآن الكريم لأول مرة في شهر رمضان"
+        },
+        {
+            "id": 3,
+            "textEn": "The Prophet (ﷺ) said: 'Whoever spends the night of Laylatul Qadr in prayer out of faith and in the hope of reward, his previous sins will be forgiven.' (Bukhari)",
+            "textAr": "قال النبي ﷺ: من قام ليلة القدر إيماناً واحتساباً غفر له ما تقدم من ذنب (رواه البخاري)"
+        },
+        {
+            "id": 4,
+            "textEn": "Fasting (Sawm) is one of the Five Pillars of Islam.",
+            "textAr": "الصيام هو أحد أركان الإسلام الخمسة"
+        },
+        {
+            "id": 5,
+            "textEn": "Tarawih prayers are sunnah prayers performed only in Ramadan.",
+            "textAr": "صلاة التراويح هي سنة تؤدى فقط في رمضان"
+        },
+        {
+            "id": 6,
+            "textEn": "I'tikaf is the practice of spiritual retreat in the mosque.",
+            "textAr": "الاعتكاف هو الخلوة للعبادة في المسجد"
+        },
+        {
+            "id": 7,
+            "textEn": "Dates are the traditional food used to break the fast.",
+            "textAr": "التمر هو الطعام التقليدي لكسر الصيام"
+        },
+        {
+            "id": 8,
+            "textEn": "Ramadan ends with the celebration of Eid al-Fitr.",
+            "textAr": "ينتهي رمضان بالاحتفال بعيد الفطر المبارك"
+        },
+        {
+            "id": 9,
+            "textEn": "Badr, the first major battle in Islam, occurred in Ramadan.",
+            "textAr": "وقعت غزوة بدر الكبرى في شهر رمضان"
+        },
+        {
+            "id": 10,
+            "textEn": "The smell of a fasting person's mouth is beloved to Allah.",
+            "textAr": "خلوف فم الصائم أطيب عند الله من ريح المسك"
+        },
+        {
+            "id": 11,
+            "textEn": "Fasting helps in developing self-discipline and empathy.",
+            "textAr": "الصيام يساعد في تنمية الانضباط الذاتي والتعاطف"
+        },
+        {
+            "id": 12,
+            "textEn": "There are about 1.9 billion Muslims worldwide who observe Ramadan.",
+            "textAr": "يصوم رمضان حوالي 1.9 مليار مسلم حول العالم"
+        },
+        {
+            "id": 13,
+            "textEn": "The word 'Ramadan' comes from the Arabic root 'ar-ramad', meaning scorching heat.",
+            "textAr": "كلمة رمضان تأتي من الرمضاء أي شدة الحر"
+        },
+        {
+            "id": 14,
+            "textEn": "Fasting is not required for the sick, travelers, or the elderly.",
+            "textAr": "الصيام غير واجب على المريض والمسافر وكبار السن"
+        },
+        {
+            "id": 15,
+            "textEn": "Zakat al-Fitr is a special charity given at the end of Ramadan.",
+            "textAr": "زكاة الفطر هي صدقة خاصة تخرج في نهاية رمضان"
+        },
+        {
+            "id": 16,
+            "textEn": "The Prophet (ﷺ) said: 'When Ramadan begins, the gates of Paradise are opened and the gates of Hell are closed, and the devils are chained up.' (Bukhari & Muslim)",
+            "textAr": "قال النبي ﷺ: إذا جاء رمضان فتحت أبواب الجنة، وغلقت أبواب النار، وصفدت الشياطين (متفق عليه)"
+        },
+        {
+            "id": 17,
+            "textEn": "Each day of fasting is rewarded immensely by Allah Himelf.",
+            "textAr": "كل يوم صيام يجازي الله عليه الصائم جزاءً عظيماً"
+        },
+        {
+            "id": 18,
+            "textEn": "The first ten days of Ramadan are known as the Days of Mercy.",
+            "textAr": "العشر الأوائل من رمضان تسمى أيام الرحمة"
+        },
+        {
+            "id": 19,
+            "textEn": "The middle ten days are known as the Days of Forgiveness.",
+            "textAr": "العشر الأواسط تسمى أيام المغفرة"
+        },
+        {
+            "id": 20,
+            "textEn": "The last ten days are the Days of Salvation from Hellfire.",
+            "textAr": "العشر الأواخر تسمى أيام العتق من النار"
+        },
+        {
+            "id": 21,
+            "textEn": "The Prophet (ﷺ) said: 'Take Suhoor, for in Suhoor there is blessing.' (Bukhari & Muslim)",
+            "textAr": "قال النبي ﷺ: تسحروا فإن في السحور بركة (متفق عليه)"
+        },
+        {
+            "id": 22,
+            "textEn": "Iftar is the meal eaten at sunset to break the fast.",
+            "textAr": "الإفطار هو الوجبة التي يتم تناولها عند الغروب"
+        },
+        {
+            "id": 23,
+            "textEn": "Many Muslims aim to complete the recitation of the whole Quran in Ramadan.",
+            "textAr": "يسعى الكثيرون لختم القرآن الكريم كاملاً في رمضان"
+        },
+        {
+            "id": 24,
+            "textEn": "The Prophet (ﷺ) said: 'Fasting is a shield; so when one of you is fasting he should not use obscene language nor shout.' (Bukhari)",
+            "textAr": "قال النبي ﷺ: الصيام جنة، فلا يرفث ولا يجهل (رواه البخاري)"
+        },
+        {
+            "id": 25,
+            "textEn": "Lunar months are either 29 or 30 days long.",
+            "textAr": "الشهر القمري يكون إما 29 أو 30 يوماً"
+        },
+        {
+            "id": 26,
+            "textEn": "Ramadan is a time for increased charity and community bonding.",
+            "textAr": "رمضان هو وقت لزيادة الصدقات والترابط المجتمعي"
+        },
+        {
+            "id": 27,
+            "textEn": "The Prophet Muhammad (PBUH) was most generous in Ramadan.",
+            "textAr": "كان النبي صلى الله عليه وسلم أجود ما يكون في رمضان"
+        },
+        {
+            "id": 28,
+            "textEn": "Iftar gatherings are a common way for families to bond.",
+            "textAr": "تجمعات الإفطار هي وسيلة شائعة لترابط العائلات"
+        },
+        {
+            "id": 29,
+            "textEn": "Ramadan moves about 10-11 days earlier each Gregorian year.",
+            "textAr": "يتقدم رمضان حوالي 10-11 يوماً كل عام ميلادي"
+        },
+        {
+            "id": 30,
+            "textEn": "Fasting is a tradition that predates Islam in many cultures.",
+            "textAr": "الصيام تقليد قديم وجد في حضارات عديدة قبل الإسلام"
+        }
+    ]
+}

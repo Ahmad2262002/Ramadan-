@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "category": "morning",
+        "titleEn": "Ayat al-Kursi",
+        "titleAr": "آية الكرسي",
+        "textEn": "Allah! There is no deity except Him, the Ever-Living, the Sustainer of existence...",
+        "textAr": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
+        "repetitions": 1,
+        "reference": "Quran 2:255"
+    },
+    {
+        "id": 2,
+        "category": "morning",
+        "titleEn": "Morning Protection",
+        "titleAr": "أذكار الصباح",
+        "textEn": "We have reached the morning and at this very time all sovereignty belongs to Allah.",
+        "textAr": "أصبحنا وأصبح الملك لله",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 3,
+        "category": "morning",
+        "titleEn": "Seeking Refuge",
+        "titleAr": "الاستعاذة",
+        "textEn": "I seek refuge in Allah's perfect words from the evil of what He has created.",
+        "textAr": "أعوذ بكلمات الله التامات من شر ما خلق",
+        "repetitions": 3,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 4,
+        "category": "evening",
+        "titleEn": "Evening Protection",
+        "titleAr": "أذكار المساء",
+        "textEn": "We have reached the evening and at this very time all sovereignty belongs to Allah.",
+        "textAr": "أمسينا وأمسى الملك لله",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 5,
+        "category": "evening",
+        "titleEn": "The Last Two Verses of Al-Baqarah",
+        "titleAr": "آخر آيتين من سورة البقرة",
+        "textEn": "The Messenger believes in what has been revealed to him from his Lord...",
+        "textAr": "آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ",
+        "repetitions": 1,
+        "reference": "Quran 2:285-286"
+    },
+    {
+        "id": 6,
+        "category": "afterPrayer",
+        "titleEn": "Istighfar",
+        "titleAr": "الاستغفار",
+        "textEn": "I seek forgiveness from Allah.",
+        "textAr": "أستغفر الله",
+        "repetitions": 3,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 7,
+        "category": "afterPrayer",
+        "titleEn": "Tasbih",
+        "titleAr": "التسبيح",
+        "textEn": "Glory be to Allah.",
+        "textAr": "سبحان الله",
+        "repetitions": 33,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 8,
+        "category": "afterPrayer",
+        "titleEn": "Tahmid",
+        "titleAr": "التحميد",
+        "textEn": "All praise is due to Allah.",
+        "textAr": "الحمد لله",
+        "repetitions": 33,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 9,
+        "category": "afterPrayer",
+        "titleEn": "Takbir",
+        "titleAr": "التكبير",
+        "textEn": "Allah is the Greatest.",
+        "textAr": "الله أكبر",
+        "repetitions": 33,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 10,
+        "category": "beforeIftar",
+        "titleEn": "Dua Before Breaking Fast",
+        "titleAr": "دعاء قبل الإفطار",
+        "textEn": "O Allah, for You I have fasted and with Your provision I break my fast.",
+        "textAr": "اللهم لك صمت وعلى رزقك أفطرت",
+        "repetitions": 1,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 11,
+        "category": "afterIftar",
+        "titleEn": "Dua After Breaking Fast",
+        "titleAr": "دعاء بعد الإفطار",
+        "textEn": "The thirst has gone, the veins are moistened and the reward is confirmed, if Allah wills.",
+        "textAr": "ذهب الظمأ وابتلت العروق وثبت الأجر إن شاء الله",
+        "repetitions": 1,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 12,
+        "category": "beforeSuhoor",
+        "titleEn": "Intention for Fasting",
+        "titleAr": "نية الصيام",
+        "textEn": "I intend to fast tomorrow for the sake of Allah.",
+        "textAr": "نويت صوم غد عن أداء فرض رمضان",
+        "repetitions": 1,
+        "reference": "Islamic Tradition"
+    },
+    {
+        "id": 13,
+        "category": "sleeping",
+        "titleEn": "Before Sleeping",
+        "titleAr": "عند النوم",
+        "textEn": "In Your name, O Allah, I live and I die.",
+        "textAr": "باسمك اللهم أموت وأحيا",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 14,
+        "category": "sleeping",
+        "titleEn": "Surah Al-Ikhlas (3x)",
+        "titleAr": "سورة الإخلاص",
+        "textEn": "Say, \"He is Allah, [who is] One...\"",
+        "textAr": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+        "repetitions": 3,
+        "reference": "Quran 112"
+    },
+    {
+        "id": 15,
+        "category": "wakingUp",
+        "titleEn": "Upon Waking Up",
+        "titleAr": "عند الاستيقاظ",
+        "textEn": "Praise is to Allah who gave us life after He had caused us to die and to Him is the return.",
+        "textAr": "الحمد لله الذي أحيانا بعد ما أماتنا وإليه النشور",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 16,
+        "category": "morning",
+        "titleEn": "Master of Forgiveness",
+        "titleAr": "سيد الاستغفار",
+        "textEn": "O Allah, You are my Lord, there is no deity except You. You created me and I am Your servant...",
+        "textAr": "اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 17,
+        "category": "morning",
+        "titleEn": "Allah sufficeth me",
+        "titleAr": "حسبي الله",
+        "textEn": "Allah is sufficient for me. There is no deity except Him. In Him I have put my trust...",
+        "textAr": "حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم",
+        "repetitions": 7,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 18,
+        "category": "morning",
+        "titleEn": "Gratitude",
+        "titleAr": "الرضا بالله",
+        "textEn": "I am pleased with Allah as my Lord, with Islam as my religion and with Muhammad as my Prophet.",
+        "textAr": "رضيت بالله رباً وبالإسلام ديناً وبمحمد صلى الله عليه وسلم نبياً",
+        "repetitions": 3,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 19,
+        "category": "morning",
+        "titleEn": "Glorification",
+        "titleAr": "سبحان الله وبحمده",
+        "textEn": "Glory is to Allah and praise is to Him, by the multitude of His creation...",
+        "textAr": "سبحان الله وبحمده عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته",
+        "repetitions": 3,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 20,
+        "category": "morning",
+        "titleEn": "Healing and Strength",
+        "titleAr": "يا حي يا قيوم",
+        "textEn": "O Ever-Living, O Sustainer, by Your mercy I seek help. Set all my affairs right...",
+        "textAr": "يا حي يا قيوم برحمتك أستغيث أصلح لي شأني كله ولا تكلني إلى نفسي طرفة عين",
+        "repetitions": 1,
+        "reference": "Mustadrak Al-Hakim"
+    },
+    {
+        "id": 21,
+        "category": "evening",
+        "titleEn": "Evening Refuge",
+        "titleAr": "أعوذ بكلمات الله",
+        "textEn": "I seek refuge in Allah's perfect words from the evil of what He has created.",
+        "textAr": "أعوذ بكلمات الله التامات من شر ما خلق",
+        "repetitions": 3,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 22,
+        "category": "evening",
+        "titleEn": "Prayer for Wellbeing",
+        "titleAr": "اللهم عافني",
+        "textEn": "O Allah, make me healthy in my body. O Allah, make me healthy in my hearing. O Allah, make me healthy in my sight.",
+        "textAr": "اللهم عافني في بدني، اللهم عافني في سمعي، اللهم عافني في بصري",
+        "repetitions": 3,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 23,
+        "category": "evening",
+        "titleEn": "Refuge from Debt",
+        "titleAr": "الاستعاذة من الهم والحزن",
+        "textEn": "O Allah, I seek refuge with You from worry and grief, from incapacity and laziness...",
+        "textAr": "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 24,
+        "category": "afterPrayer",
+        "titleEn": "Peace belongs to Allah",
+        "titleAr": "اللهم أنت السلام",
+        "textEn": "O Allah, You are Peace and from You comes peace. Blessed are You, O Owner of Majesty and Honor.",
+        "textAr": "اللهم أنت السلام ومنك السلام تباركت يا ذا الجلال والإكرام",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 25,
+        "category": "afterPrayer",
+        "titleEn": "Help in Worship",
+        "titleAr": "الإعانة على الذكر",
+        "textEn": "O Allah, help me to remember You, to give thanks to You, and to worship You in the best way.",
+        "textAr": "اللهم أعني على ذكرك وشكرك وحسن عبادتك",
+        "repetitions": 1,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 26,
+        "category": "general",
+        "titleEn": "Purity of Heart",
+        "titleAr": "لا إله إلا الله وحده",
+        "textEn": "None has the right to be worshipped but Allah alone, Who has no partner...",
+        "textAr": "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير",
+        "repetitions": 100,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 27,
+        "category": "general",
+        "titleEn": "Weighty Words",
+        "titleAr": "كلمتان خفيفتان",
+        "textEn": "Two words are light on the tongue, heavy in the balance, and beloved to the Most Merciful: Glory be to Allah and all praise is His...",
+        "textAr": "سبحان الله وبحمده، سبحان الله العظيم",
+        "repetitions": 33,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 28,
+        "category": "general",
+        "titleEn": "Treasure from Paradise",
+        "titleAr": "لاحول ولا قوة إلا بالله",
+        "textEn": "There is no might and no power except with Allah.",
+        "textAr": "لا حول ولا قوة إلا بالله",
+        "repetitions": 10,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 29,
+        "category": "general",
+        "titleEn": "Salutations on the Prophet",
+        "titleAr": "الصلاة على النبي",
+        "textEn": "O Allah, send prayers and peace upon our Prophet Muhammad.",
+        "textAr": "اللهم صل وسلم على نبينا محمد",
+        "repetitions": 10,
+        "reference": "At-Tabarani"
+    },
+    {
+        "id": 30,
+        "category": "mosque",
+        "titleEn": "Entering the Mosque",
+        "titleAr": "دخول المسجد",
+        "textEn": "O Allah, open for me the gates of Your mercy.",
+        "textAr": "اللهم افتح لي أبواب رحمتك",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 31,
+        "category": "mosque",
+        "titleEn": "Leaving the Mosque",
+        "titleAr": "الخروج من المسجد",
+        "textEn": "O Allah, I ask You from Your bounty.",
+        "textAr": "اللهم إني أسألك من فضلك",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 32,
+        "category": "travel",
+        "titleEn": "Supplication for Travel",
+        "titleAr": "دعاء السفر",
+        "textEn": "Allah is the Greatest (3x). Glory is to Him Who has subjected this to us...",
+        "textAr": "الله أكبر، الله أكبر، الله أكبر، سبحان الذي سخر لنا هذا وما كنا له مقرنين",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 33,
+        "category": "general",
+        "titleEn": "Remembrance",
+        "titleAr": "ذكر الله",
+        "textEn": "Glory be to Allah, and praise be to Allah, and there is no deity but Allah, and Allah is most Great.",
+        "textAr": "سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر",
+        "repetitions": 10,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 34,
+        "category": "sleeping",
+        "titleEn": "Sleeping Prep",
+        "titleAr": "آية الكرسي لله",
+        "textEn": "Whoever reads Ayat al-Kursi before sleeping, a protector from Allah will remain with him...",
+        "textAr": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 35,
+        "category": "sleeping",
+        "titleEn": "The Last Two Verses (Night)",
+        "titleAr": "خواتيم سورة البقرة",
+        "textEn": "Whoever recites the last two verses of Surah Al-Baqarah at night, they will be sufficient for him.",
+        "textAr": "آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 36,
+        "category": "wakingUp",
+        "titleEn": "Waking Confidence",
+        "titleAr": "التوحيد عند الاستيقاظ",
+        "textEn": "None has the right to be worshipped but Allah alone... all praise is for Allah.",
+        "textAr": "لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير",
+        "repetitions": 1,
+        "reference": "Sahih al-Bukhari"
+    },
+    {
+        "id": 37,
+        "category": "general",
+        "titleEn": "Seeking Firmness",
+        "titleAr": "يا مقلب القلوب",
+        "textEn": "O Turner of the hearts, make my heart firm upon Your religion.",
+        "textAr": "يا مقلب القلوب ثبت قلبي على دينك",
+        "repetitions": 1,
+        "reference": "Jami' at-Tirmidhi"
+    },
+    {
+        "id": 38,
+        "category": "general",
+        "titleEn": "Asking for Guidance",
+        "titleAr": "اللهم إني أسألك الهدى",
+        "textEn": "O Allah, I ask You for guidance, piety, chastity and self-sufficiency.",
+        "textAr": "اللهم إني أسألك الهدى والتقى والعفاف والغنى",
+        "repetitions": 1,
+        "reference": "Sahih Muslim"
+    },
+    {
+        "id": 39,
+        "category": "morning",
+        "titleEn": "Protection (Earth & Heaven)",
+        "titleAr": "حماية الأرض والسماء",
+        "textEn": "In the name of Allah, with whose name nothing can cause harm in the earth or in the heaven...",
+        "textAr": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+        "repetitions": 3,
+        "reference": "Sunan Abu Dawud"
+    },
+    {
+        "id": 40,
+        "category": "general",
+        "titleEn": "Protection from Falling",
+        "titleAr": "الاستعاذة من التردي",
+        "textEn": "O Allah, I seek refuge in You from falling, from old age, from drowning and from being burned.",
+        "textAr": "اللهم إني أعوذ بك من التردي والهدم والغرق والحرق",
+        "repetitions": 1,
+        "reference": "Sunan an-Nasa'i"
+    }
+]
