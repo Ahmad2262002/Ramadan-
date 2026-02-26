@@ -7,6 +7,18 @@ import { motion } from 'framer-motion';
 export default function Background() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [timeTheme, setTimeTheme] = useState<'dawn' | 'day' | 'dusk' | 'night'>('night');
+    const [isLowPerformance, setIsLowPerformance] = useState(false);
+
+    useEffect(() => {
+        // Simple performance detection
+        const checkPerformance = () => {
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            const lowMemory = (navigator as any).deviceMemory && (navigator as any).deviceMemory <= 4;
+            const lowCPU = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+            setIsLowPerformance(isMobile || lowMemory || lowCPU || window.innerWidth < 768);
+        };
+        checkPerformance();
+    }, []);
 
     useEffect(() => {
         const updateTheme = () => {
@@ -96,7 +108,8 @@ export default function Background() {
 
         const init = () => {
             particles = [];
-            const particleCount = Math.min(window.innerWidth * 0.03, 70);
+            const baseCount = window.innerWidth * 0.03;
+            const particleCount = isLowPerformance ? Math.min(baseCount * 0.5, 20) : Math.min(baseCount, 70);
             for (let i = 0; i < particleCount; i++) {
                 particles.push(new Particle());
             }
@@ -143,35 +156,37 @@ export default function Background() {
             <div className={`fixed inset-0 bg-gradient-to-b ${themes[timeTheme]} transition-colors duration-[10000ms] -z-50`} />
 
             {/* Mesh Gradient Blobs */}
-            <div className="fixed inset-0 -z-40 pointer-events-none overflow-hidden opacity-40">
-                <motion.div
-                    animate={{
-                        x: [0, 100, -50, 0],
-                        y: [0, -50, 100, 0],
-                        scale: [1, 1.2, 0.9, 1],
-                    }}
-                    transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                    className="absolute -top-1/4 -left-1/4 w-full h-full bg-[radial-gradient(circle,var(--mesh-1),transparent_60%)] blur-[120px]"
-                />
-                <motion.div
-                    animate={{
-                        x: [0, -120, 80, 0],
-                        y: [0, 100, -80, 0],
-                        rotate: [0, 120, 240, 360],
-                    }}
-                    transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-                    className="absolute -bottom-1/4 -right-1/4 w-full h-full bg-[radial-gradient(circle,var(--mesh-2),transparent_60%)] blur-[140px]"
-                />
-                <motion.div
-                    animate={{
-                        x: [0, 150, -100, 0],
-                        y: [0, 80, -120, 0],
-                        scale: [0.8, 1.1, 0.9, 0.8],
-                    }}
-                    transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-                    className="absolute top-1/4 left-1/2 w-[80%] h-[80%] bg-[radial-gradient(circle,var(--mesh-3),transparent_60%)] blur-[160px]"
-                />
-            </div>
+            {!isLowPerformance && (
+                <div className="fixed inset-0 -z-40 pointer-events-none overflow-hidden opacity-40">
+                    <motion.div
+                        animate={{
+                            x: [0, 100, -50, 0],
+                            y: [0, -50, 100, 0],
+                            scale: [1, 1.2, 0.9, 1],
+                        }}
+                        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                        className="absolute -top-1/4 -left-1/4 w-full h-full bg-[radial-gradient(circle,var(--mesh-1),transparent_60%)] blur-[120px]"
+                    />
+                    <motion.div
+                        animate={{
+                            x: [0, -120, 80, 0],
+                            y: [0, 100, -80, 0],
+                            rotate: [0, 120, 240, 360],
+                        }}
+                        transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
+                        className="absolute -bottom-1/4 -right-1/4 w-full h-full bg-[radial-gradient(circle,var(--mesh-2),transparent_60%)] blur-[140px]"
+                    />
+                    <motion.div
+                        animate={{
+                            x: [0, 150, -100, 0],
+                            y: [0, 80, -120, 0],
+                            scale: [0.8, 1.1, 0.9, 0.8],
+                        }}
+                        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+                        className="absolute top-1/4 left-1/2 w-[80%] h-[80%] bg-[radial-gradient(circle,var(--mesh-3),transparent_60%)] blur-[160px]"
+                    />
+                </div>
+            )}
 
             {/* Ethereal Glow Transition Overlay */}
             <div className="fixed inset-0 -z-30 pointer-events-none bg-[radial-gradient(circle_at_50%_0%,rgba(245,158,11,0.05),transparent_70%)] mix-blend-screen" />

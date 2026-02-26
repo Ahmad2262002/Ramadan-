@@ -64,7 +64,7 @@ export default function AdhkarSection() {
                             key={category.id}
                             onClick={() => setSelectedCategory(category.id)}
                             className={cn(
-                                "ios-pill transition-all duration-300",
+                                "ios-pill transition-all duration-300 premium-trigger haptic-feedback",
                                 selectedCategory === category.id
                                     ? "bg-amber-500 text-black border-amber-500/50 shadow-lg shadow-amber-500/10"
                                     : "text-white/30 hover:text-white border-white/5"
@@ -89,8 +89,8 @@ export default function AdhkarSection() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: idx * 0.05 }}
                             className={cn(
-                                "premium-card p-8 group relative",
-                                isComplete && 'border-emerald-500/20 bg-emerald-500/[0.04]'
+                                "premium-card p-8 group relative overflow-hidden transition-all duration-500",
+                                isComplete ? 'border-emerald-500/20 bg-emerald-500/[0.04]' : 'premium-trigger'
                             )}
                         >
                             <div className="flex items-start justify-between mb-8 gap-6">
@@ -101,7 +101,7 @@ export default function AdhkarSection() {
                                         </span>
                                         <button
                                             onClick={() => copyToClipboard(dhikr.id, textToCopy)}
-                                            className="p-1.5 rounded-lg hover:bg-white/5 text-white/10 hover:text-white transition-colors"
+                                            className="p-1.5 rounded-lg hover:bg-white/5 text-white/10 hover:text-white transition-colors haptic-feedback premium-trigger"
                                         >
                                             {copiedId === dhikr.id ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                                         </button>
@@ -150,7 +150,7 @@ export default function AdhkarSection() {
                                 <motion.button
                                     whileTap={{ scale: 0.9 }}
                                     onClick={() => resetCounter(dhikr.id)}
-                                    className="p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/5 text-white/20 hover:text-white transition-all"
+                                    className="p-4 bg-white/5 hover:bg-white/10 rounded-2xl border border-white/5 text-white/20 hover:text-white transition-all haptic-feedback premium-trigger"
                                 >
                                     <RotateCcw className="w-5 h-5" />
                                 </motion.button>

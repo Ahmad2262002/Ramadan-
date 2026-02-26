@@ -27,7 +27,7 @@ export function NotificationSettings({ notifications, suhoorOffset, onUpdate, on
                         </div>
                         <span className="font-bold text-sm text-white/80">{t('pushAlerts')}</span>
                     </div>
-                    <label className="relative inline-flex items-center cursor-pointer">
+                    <label className="relative inline-flex items-center cursor-pointer haptic-feedback">
                         <input
                             type="checkbox"
                             className="sr-only peer"

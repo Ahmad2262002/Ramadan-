@@ -45,7 +45,7 @@ export function PrayerOffsets({ offsets, onUpdate }: PrayerOffsetsProps) {
                             <div className="flex items-center gap-4">
                                 <button
                                     onClick={() => updateOffset(prayer, -1)}
-                                    className="p-1.5 rounded-lg bg-white/5 hover:bg-red-500/20 text-white/40 hover:text-red-500 transition-all"
+                                    className="p-1.5 rounded-lg bg-white/5 hover:bg-red-500/20 text-white/40 hover:text-red-500 transition-all haptic-feedback"
                                 >
                                     <Minus className="w-3 h-3" />
                                 </button>
@@ -56,7 +56,7 @@ export function PrayerOffsets({ offsets, onUpdate }: PrayerOffsetsProps) {
                                 </span>
                                 <button
                                     onClick={() => updateOffset(prayer, 1)}
-                                    className="p-1.5 rounded-lg bg-white/5 hover:bg-emerald-500/20 text-white/40 hover:text-emerald-500 transition-all"
+                                    className="p-1.5 rounded-lg bg-white/5 hover:bg-emerald-500/20 text-white/40 hover:text-emerald-500 transition-all haptic-feedback"
                                 >
                                     <Plus className="w-3 h-3" />
                                 </button>

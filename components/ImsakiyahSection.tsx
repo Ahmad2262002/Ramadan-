@@ -236,10 +236,10 @@ export default function ImsakiyahSection() {
                             }
                             setHasScrolled(false);
                         }}
-                        className="p-2 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors"
+                        className="p-2.5 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all premium-trigger haptic-feedback"
                         title={t('imsakiyah.snapToCurrent')}
                     >
-                        <RefreshCw className="w-3.5 h-3.5 text-white/40" />
+                        <RefreshCw className="w-4 h-4 text-white/40" />
                     </button>
                 </div>
             </div>
@@ -248,7 +248,7 @@ export default function ImsakiyahSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                 <button
                     onClick={() => setIsHijriMode(!isHijriMode)}
-                    className="premium-card p-4 flex items-center justify-between group overflow-hidden"
+                    className="premium-card p-4 flex items-center justify-between group overflow-hidden premium-trigger haptic-feedback"
                 >
                     <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center">
@@ -326,7 +326,7 @@ export default function ImsakiyahSection() {
                             viewport={{ once: true }}
                             transition={{ delay: (index % 15) * 0.03 }}
                             className={cn(
-                                "premium-card flex flex-col gap-4 py-6 transition-all duration-500",
+                                "premium-card flex flex-col gap-4 py-6 transition-all duration-500 relative overflow-hidden",
                                 isToday ? "border-amber-500 bg-amber-500/[0.08] ring-4 ring-amber-500/10 scale-[1.02] z-10" : "bg-white/[0.02]"
                             )}
                         >
@@ -380,7 +380,7 @@ export default function ImsakiyahSection() {
             </div>
 
             <p className="text-center text-xs text-white/10 font-medium py-8">
-                {t('imsakiyah.issues')} <button onClick={() => window.location.reload()} className="text-white/20 underline hover:text-white transition-colors">{t('imsakiyah.refresh')}</button>
+                {t('imsakiyah.issues')} <button onClick={() => window.location.reload()} className="text-white/20 underline hover:text-white transition-colors haptic-feedback">{t('imsakiyah.refresh')}</button>
             </p>
         </div>
     );

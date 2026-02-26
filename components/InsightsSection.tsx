@@ -33,7 +33,7 @@ export default function InsightsSection() {
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="premium-card p-8 bg-amber-500/[0.03] border-amber-500/20 relative overflow-hidden group"
+                className="premium-card p-8 bg-amber-500/[0.03] border-amber-500/20 relative overflow-hidden group premium-trigger"
             >
                 <div className="absolute -right-6 -bottom-6 p-4 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
                     <Gift className="w-32 h-32 text-amber-500" />
@@ -62,7 +62,7 @@ export default function InsightsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="premium-card p-8 bg-blue-500/[0.03] border-blue-500/20 relative overflow-hidden group"
+                className="premium-card p-8 bg-blue-500/[0.03] border-blue-500/20 relative overflow-hidden group premium-trigger"
             >
                 <div className="absolute -right-6 -bottom-6 p-4 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity">
                     <Lightbulb className="w-32 h-32 text-blue-500" />

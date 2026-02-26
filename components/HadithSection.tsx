@@ -119,7 +119,7 @@ export default function HadithSection() {
                                     {text.length > 200 && (
                                         <button
                                             onClick={() => setExpandedId(isExpanded ? null : hadith.id)}
-                                            className="flex items-center justify-center gap-2 group/btn ios-pill border-white/5 hover:border-amber-500/30 transition-all"
+                                            className="flex items-center justify-center gap-2 group/btn ios-pill border-white/5 hover:border-amber-500/30 transition-all premium-trigger haptic-feedback"
                                         >
                                             <span className="text-[10px] font-black uppercase tracking-widest text-white/40 group-hover/btn:text-white transition-colors">
                                                 {isExpanded ? t('hadith.showLess') : t('hadith.showMore')}

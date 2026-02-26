@@ -59,7 +59,7 @@ export function LocationSettings({ locationMode, city, country, onUpdate }: Loca
                         </div>
                         <span className="font-bold text-sm text-white/80">{t('detection')}</span>
                     </div>
-                    <div className="premium-card p-1 flex bg-white/5 border-white/5 relative">
+                    <div className="premium-card p-1 flex bg-white/5 border-white/5 relative premium-trigger">
                         <select
                             value={locationMode}
                             onChange={(e) => onUpdate({ locationMode: e.target.value })}
@@ -130,7 +130,7 @@ export function LocationSettings({ locationMode, city, country, onUpdate }: Loca
                                                                 key={`${c}-${index}`}
                                                                 onClick={() => onUpdate({ city: c })}
                                                                 className={cn(
-                                                                    "text-left px-3 py-2 rounded-lg text-xs transition-all",
+                                                                    "text-left px-3 py-2 rounded-lg text-xs transition-all haptic-feedback",
                                                                     city === c ? "bg-amber-500 text-black font-bold" : "text-white/60 hover:bg-white/5 hover:text-white"
                                                                 )}
                                                             >

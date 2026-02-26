@@ -2,8 +2,8 @@ const CACHE_NAME = 'ramadan-hub-v1';
 const STATIC_ASSETS = [
     '/',
     '/manifest.json',
-    '/icon-192x192.png',
-    '/icon-512x512.png',
+    '/favicon.ico',
+    '/icon.svg',
 ];
 
 // Install event - cache static assets

@@ -75,7 +75,11 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
                         whileTap={{ scale: 0.95 }}
                         className="w-12 h-12 rounded-[1.25rem] bg-amber-500/[0.07] border border-amber-500/20 flex items-center justify-center shadow-lg relative overflow-hidden group-hover:border-amber-500/40 transition-colors"
                     >
-                        <MoonStar className="w-6 h-6 text-amber-500 drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]" />
+                        <img
+                            src="/favicon.ico"
+                            alt="Logo"
+                            className="w-7 h-7 object-contain drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </motion.div>
 
@@ -109,15 +113,15 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
                             aria-label={item.label}
                             aria-current={activeTab === item.id ? 'page' : undefined}
                             className={cn(
-                                "text-[11px] font-black uppercase tracking-[0.3em] transition-all duration-500 relative group/link px-1 py-2",
-                                activeTab === item.id ? "text-amber-500" : "text-white/30 hover:text-white"
+                                "text-[11px] font-black uppercase tracking-[0.3em] transition-all duration-500 relative group/link px-3 py-2 rounded-xl haptic-feedback",
+                                activeTab === item.id ? "text-amber-500" : "text-white/30 hover:text-white hover:bg-white/5"
                             )}
                         >
                             {item.label}
                             {activeTab === item.id && (
                                 <motion.div
                                     layoutId="nav-underline"
-                                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)] rounded-full"
+                                    className="absolute -bottom-1 left-2 right-2 h-0.5 bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)] rounded-full"
                                 />
                             )}
                         </button>
@@ -128,7 +132,7 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
                 <div className="flex items-center gap-3">
                     <button
                         onClick={toggleLanguage}
-                        className="p-2.5 rounded-2xl hover:bg-white/5 transition-all group"
+                        className="p-2.5 rounded-2xl hover:bg-white/5 transition-all group premium-trigger haptic-feedback"
                         title={locale === 'en' ? 'Arabic' : 'English'}
                     >
                         <Languages className="w-4 h-4 text-white/30 group-hover:text-amber-500 transition-colors" />
@@ -140,7 +144,7 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
                         onClick={toggleNotifications}
                         aria-label={t('nav.settings')}
                         className={cn(
-                            "p-2.5 rounded-2xl hover:bg-white/5 transition-all group relative",
+                            "p-2.5 rounded-2xl hover:bg-white/5 transition-all group relative premium-trigger haptic-feedback",
                             isPanelOpen && "bg-amber-500/[0.07] border-amber-500/20"
                         )}
                     >

@@ -32,6 +32,17 @@ export default function TodaySection({ onTabChange }: TodayProps) {
     const [detectionMethod, setDetectionMethod] = useState<'gps' | 'ip' | 'manual' | 'fallback' | null>(null);
     const [isIftarTime, setIsIftarTime] = useState(false);
     const [celebrationActive, setCelebrationActive] = useState(false);
+    const [isLowPerformance, setIsLowPerformance] = useState(false);
+
+    useEffect(() => {
+        const checkPerformance = () => {
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            const lowMemory = (navigator as any).deviceMemory && (navigator as any).deviceMemory <= 4;
+            const lowCPU = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+            setIsLowPerformance(isMobile || lowMemory || lowCPU || window.innerWidth < 768);
+        };
+        checkPerformance();
+    }, []);
 
     const dailyDua = useMemo(() => {
         const today = new Date();
@@ -416,17 +427,19 @@ export default function TodaySection({ onTabChange }: TodayProps) {
     const prayersList = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
 
     return (
-        <div className="space-y-12 animate-spring px-2 max-w-5xl mx-auto">
+        <div className="space-y-16 animate-spring px-4 max-w-5xl mx-auto pb-32">
             {/* Header / Date Info */}
-            <div className="flex flex-col items-center gap-2 mb-4">
+            <div className="flex flex-col items-center gap-4 mb-2">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    className="ios-pill text-white/40 border-white/5 bg-white/[0.02]"
+                    className="ios-pill !bg-white/[0.03] !border-white/10 !px-6 !py-2 text-[11px]"
                 >
                     {new Intl.DateTimeFormat(locale, { weekday: 'long', day: 'numeric', month: 'long' }).format(currentTime || new Date())}
                 </motion.div>
-                <h1 className="text-2xl font-black text-white tracking-tight">{t('today.title')}</h1>
+                <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight text-center">
+                    {t('today.title')}
+                </h1>
             </div>
 
             {/* Main Bento Grid */}
@@ -451,8 +464,8 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                         isIftarTime && "from-emerald-500/15"
                     )} />
 
-                    {isRainy && <RainEffect />}
-                    {isCloudy && <CloudEffect />}
+                    {isRainy && !isLowPerformance && <RainEffect />}
+                    {isCloudy && !isLowPerformance && <CloudEffect />}
 
                     <div className={cn(
                         "absolute -top-32 -right-32 w-80 h-80 bg-amber-500/[0.08] rounded-full blur-[120px] mix-blend-screen",
@@ -498,13 +511,13 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                                     initial={{ y: 10, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     exit={{ y: -10, opacity: 0 }}
-                                    className="mb-6"
+                                    className="mb-8"
                                 >
                                     <span className={cn(
-                                        "px-6 py-2 rounded-full text-[12px] font-black uppercase tracking-[0.3em] inline-block shadow-xl border border-white/5",
+                                        "px-8 py-3 rounded-full text-[13px] font-black uppercase tracking-[0.4em] inline-block shadow-2xl border border-white/10",
                                         isIftarTime
-                                            ? "text-emerald-400 bg-emerald-500/[0.08]"
-                                            : "text-amber-400 bg-amber-500/[0.08]"
+                                            ? "text-emerald-400 bg-emerald-500/[0.1]"
+                                            : "text-amber-400 bg-amber-500/[0.1]"
                                     )}>
                                         {isIftarTime ? t('today.timeUntilIftar').split(' ')[0] : (nextPrayer ? t(`prayer.${nextPrayer.name.toLowerCase()}`) : '---')}
                                     </span>
@@ -513,7 +526,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
 
                             <motion.div
                                 className={cn(
-                                    "text-7xl md:text-8xl font-black text-white tracking-tighter tabular-nums mb-3 drop-shadow-2xl",
+                                    "text-8xl md:text-9xl font-black text-white tracking-tighter tabular-nums mb-4 drop-shadow-[0_0_40px_rgba(255,255,255,0.1)]",
                                     isIftarTime ? "text-glow-emerald" : "text-glow-amber"
                                 )}
                                 animate={isIftarTime ? { scale: [1, 1.05, 1] } : {}}
@@ -521,14 +534,14 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                             >
                                 {isIftarTime ? t('today.mubarak') : (nextPrayer?.timeLeft || "00:00:00")}
                             </motion.div>
-                            <span className="text-[11px] font-black text-white/30 uppercase tracking-[0.4em] md:tracking-[0.6em]">
+                            <span className="text-[12px] font-black text-white/40 uppercase tracking-[0.5em] md:tracking-[0.8em]">
                                 {isIftarTime ? t('today.maghrib') : t('today.timeUntilNextPrayer')}
                             </span>
                         </div>
                     </div>
 
                     {/* Celebration Particles */}
-                    {celebrationActive && (
+                    {celebrationActive && !isLowPerformance && (
                         <div className="absolute inset-0 pointer-events-none opacity-40">
                             {[...Array(30)].map((_, i) => (
                                 <motion.div
@@ -629,7 +642,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                             onClick={() => onTabChange(item.tab as TabType)}
                             whileHover={{ scale: 1.02, x: 5 }}
                             whileTap={{ scale: 0.98 }}
-                            className="premium-card flex items-center gap-4 py-4 group bg-white/[0.01]"
+                            className="premium-card flex items-center gap-4 py-4 group bg-white/[0.01] premium-trigger haptic-feedback"
                         >
                             <div className="w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 transition-all group-hover:scale-110 bg-white/[0.03] border border-white/5">
                                 <item.icon className={cn("w-5 h-5", item.color)} />
@@ -653,7 +666,7 @@ export default function TodaySection({ onTabChange }: TodayProps) {
                         </div>
                         <button
                             onClick={() => downloadICSFile("Ramadan Hub", "ramadan.ics")}
-                            className="ios-pill text-[10px] font-black text-amber-500/40 hover:text-amber-500 border-amber-500/10 hover:border-amber-500 transition-all uppercase tracking-widest"
+                            className="ios-pill text-[10px] font-black text-amber-500/40 hover:text-amber-500 border-amber-500/10 hover:border-amber-500 transition-all uppercase tracking-widest premium-trigger haptic-feedback"
                         >
                             {t('common.download')}
                         </button>

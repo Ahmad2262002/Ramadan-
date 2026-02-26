@@ -24,6 +24,7 @@ export const viewport = {
     maximumScale: 1,
     userScalable: false,
     themeColor: '#000000',
+    viewportFit: 'cover',
 };
 
 export async function generateMetadata({
@@ -58,7 +59,7 @@ export async function generateMetadata({
             siteName: 'Ramadan Hub Luxe',
             images: [
                 {
-                    url: '/og-image.png', // User should add this to public/
+                    url: '/favicon.ico',
                     width: 1200,
                     height: 630,
                     alt: 'Ramadan Hub Luxe',
@@ -71,12 +72,23 @@ export async function generateMetadata({
             card: 'summary_large_image',
             title: localizedTitle,
             description: localizedDesc,
-            images: ['/og-image.png'],
+            images: ['/favicon.ico'],
         },
         robots: {
             index: true,
             follow: true,
         },
+        icons: {
+            icon: [
+                { url: '/favicon.ico', sizes: 'any' },
+                { url: '/icon.svg', type: 'image/svg+xml' },
+            ],
+            shortcut: '/favicon.ico',
+            apple: [
+                { url: '/favicon.ico', sizes: '180x180', type: 'image/png' },
+            ],
+        },
+        manifest: '/manifest.json',
     };
 }
 
@@ -96,7 +108,7 @@ export default async function LocaleLayout({
     const messages = (await import(`../../messages/${locale}.json`)).default;
 
     return (
-        <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={geistSans.variable}>
+        <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className={geistSans.variable} suppressHydrationWarning>
             <body className="antialiased min-h-screen bg-black text-zinc-100 relative flex flex-col font-sans selection:bg-zinc-500/30">
                 <NextIntlClientProvider messages={messages} locale={locale}>
                     <NotificationProvider>

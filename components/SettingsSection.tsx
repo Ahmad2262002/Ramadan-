@@ -100,7 +100,7 @@ export default function SettingsSection() {
                 whileTap={{ scale: 0.98 }}
                 onClick={() => handleUpdate({ highPrecision: !settings.highPrecision })}
                 className={cn(
-                    "w-full premium-card p-6 flex items-center justify-between group transition-all overflow-hidden",
+                    "w-full premium-card p-6 flex items-center justify-between group transition-all overflow-hidden premium-trigger haptic-feedback",
                     settings.highPrecision ? "border-amber-500/20 bg-amber-500/[0.03]" : "border-white/5 bg-white/[0.02]"
                 )}
             >
@@ -137,7 +137,7 @@ export default function SettingsSection() {
                     {/* Language Toggle */}
                     <button
                         onClick={toggleLanguage}
-                        className="premium-card p-4 flex items-center justify-between group"
+                        className="premium-card p-4 flex items-center justify-between group premium-trigger haptic-feedback"
                     >
                         <div className="flex items-center gap-3">
                             <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
@@ -152,7 +152,7 @@ export default function SettingsSection() {
                     <button
                         onClick={() => handleUpdate({ soundEnabled: !settings.soundEnabled })}
                         className={cn(
-                            "premium-card p-4 flex items-center justify-between group",
+                            "premium-card p-4 flex items-center justify-between group premium-trigger haptic-feedback",
                             settings.soundEnabled ? "border-amber-500/20 bg-amber-500/[0.02]" : ""
                         )}
                     >
@@ -216,8 +216,8 @@ export default function SettingsSection() {
                     onClick={handleSave}
                     disabled={isSaved}
                     className={cn(
-                        "w-full py-5 rounded-2xl font-black text-[12px] uppercase tracking-[0.2em] flex items-center justify-center gap-3 transition-all",
-                        isSaved ? "bg-emerald-500 text-black shadow-lg shadow-emerald-500/20" : "bg-white/5 border border-white/5 text-white/40 hover:text-amber-500 hover:bg-amber-500/5 hover:border-amber-500/20"
+                        "w-full py-5 rounded-2xl font-black text-[12px] uppercase tracking-[0.2em] flex items-center justify-center gap-3 transition-all haptic-feedback relative overflow-hidden",
+                        isSaved ? "bg-emerald-500 text-black shadow-lg shadow-emerald-500/20" : "bg-white/5 border border-white/5 text-white/40 hover:text-amber-500 hover:bg-amber-500/5 hover:border-amber-500/20 premium-trigger"
                     )}
                 >
                     {isSaved ? <Check className="w-5 h-5" strokeWidth={3} /> : <Save className="w-4 h-4" />}
